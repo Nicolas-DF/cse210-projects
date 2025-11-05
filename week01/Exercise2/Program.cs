@@ -39,7 +39,7 @@ class Program
 
         if (grade >= 70)
         {
-            Console.WriteLine("COngratulations! You passed!!");
+            Console.WriteLine("Congratulations! You passed!!");
         }
         else
         {
