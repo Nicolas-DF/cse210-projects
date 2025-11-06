@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Random randomGenerator = new Random();
-        int MagicNumber = randomGenerator.Next(1, 100);
+        int MagicNumber = randomGenerator.Next(1, 101);
 
         Console.WriteLine("Magic Number Game!");
         bool done = false;
