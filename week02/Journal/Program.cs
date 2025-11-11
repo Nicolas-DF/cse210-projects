@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Journal journal = new Journal();
+        PromptGenerator promptGenerator = new PromptGenerator();
         int choice = 0;
         while (choice != 5)
         {
@@ -18,7 +20,9 @@ class Program
         
         if (choice == 1)
             {
-                
+                string prompt = promptGenerator.GetRandomPrompt();
+                Console.WriteLine(prompt);
+                string response = Console.ReadLine();
             }
         else if (choice == 2)
             {
@@ -26,11 +30,19 @@ class Program
             }
         else if (choice == 3)
             {
-                
+                Console.WriteLine("What is the file name?");
+                string fileName = Console.ReadLine();
+
             }
         else if (choice == 4)
             {
+                Console.WriteLine("What is the file name?");
+                string fileName = Console.ReadLine();
                 
+            }
+        else if (choice == 5)
+            {
+                Console.WriteLine("Goodbye!");
             }
         else
             {
