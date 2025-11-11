@@ -20,11 +20,11 @@ public class Entry
     }
         public string ToFileFormat()
     {
-        return $"{_date},{_promptText},{_entryText}";
+        return $"{_date}|{_promptText}|{_entryText}";
     }
     public static Entry FromFileFormat(string line)
     {
-        string[] parts = line.Split(',');
+        string[] parts = line.Split('|');
         return new Entry(parts[0], parts[1], parts[2]);
     }
 }
