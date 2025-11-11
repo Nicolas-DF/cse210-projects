@@ -8,7 +8,9 @@ public class PromptGenerator
         "What did you learn today?",
         "How did you see the hand of the Lord in your life today?",
         "What are you grateful for today?",
-        "What made you smile today?"
+        "What made you smile today?",
+        "Who did you serve today and how?",
+        "What is something you would have done differently today?"
 
     };
 
