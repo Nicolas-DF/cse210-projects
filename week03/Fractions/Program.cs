@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 
 
@@ -40,9 +41,15 @@ public class Fraction
         _bottom = bottom;
     }
 
-
-
-
+    public string GetFractionString()
+    {
+        string text = $"{_top}/{_bottom}";
+        return text;
+    }
+    public double GetDecimalValue()
+    {
+        return _top/_bottom;
+    }
 
 }
 
