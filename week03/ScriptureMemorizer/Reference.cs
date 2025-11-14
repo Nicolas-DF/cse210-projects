@@ -21,4 +21,8 @@ public class Reference
         _endVerse = endVerse;
     }
 
+    public void GetDisplayText()
+    {
+        Console.Write($"{_book} {_chapter}:{_verse}–{_endVerse}");
+    }
 }
