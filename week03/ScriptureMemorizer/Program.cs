@@ -1,5 +1,4 @@
 using System;
-
 class Program
 {
     static void Main(string[] args)
@@ -7,10 +6,10 @@ class Program
         Reference reference = new Reference("Proverbs", 3, 5, 6);
         Scripture scripture = new Scripture(reference, "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknowledge Him, and He shall direct thy paths.");
 
-        while (!scripture.IsCompletelyHidden())
+        do
         {
             Console.Clear();
-            Console.WriteLine(scripture.GetDisplayText());
+            scripture.GetDisplayText();
 
             Console.WriteLine("\n Press enter to continue or type 'quit' to finish:");
             string response = Console.ReadLine();
@@ -20,6 +19,6 @@ class Program
             }
 
             scripture.HideRandomNumbers(3);
-        }
+        } while (!scripture.IsCompletelyHidden());
     }
 }
