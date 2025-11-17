@@ -9,23 +9,35 @@ public class Word
     public Word(string text)
     {
         _text = text;
+        _isHidden = false;
     }
 
     public void Hide()
     {
-        
+        _isHidden = true;
     }
     public void Show()
     {
-        
+        _isHidden = false;
     }
     public bool IsHidden()
     {
-        return true;
+        return _isHidden;
     }
     public string GetDisplayText()
     {
-        string text = _text;
-        return text;
+        if (!_isHidden)
+        {
+            return _text;
+        }
+
+        char[] hiddenWord = new char[_text.Length];
+        for (int i = 0; i < _text.Length; i++)
+        {
+            char c = _text[i];
+            hiddenWord[i] = char.IsLetter(c) ? '_' : c;
+        }
+
+        return new string(hiddenWord);
     }
 }
