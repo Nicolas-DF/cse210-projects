@@ -30,13 +30,12 @@ public class Scripture
 
     public void HideRandomNumbers(int numberToHide)
     {
-        int count = 3;
         List<Word> visibleWords = _words.Where(w => !w.IsHidden()).ToList();
 
         Random random = new Random();
         List<Word> mixed = visibleWords.OrderBy(w => random.Next()).ToList();
 
-        for (int i = 0; i < count && i < mixed.Count; i++)
+        for (int i = 0; i < numberToHide && i < mixed.Count; i++)
         {
             mixed[i].Hide();
         }
