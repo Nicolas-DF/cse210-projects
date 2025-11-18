@@ -23,6 +23,6 @@ public class Reference
 
     public void GetDisplayText()
     {
-        Console.Write($"{_book} {_chapter}:{_verse}–{_endVerse}");
+        Console.Write($"{_book} {_chapter}:{_verse}–{_endVerse} ");
     }
 }
