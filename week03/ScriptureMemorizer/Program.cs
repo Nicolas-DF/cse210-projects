@@ -9,6 +9,7 @@ class Program
         while (true)
         {
             Console.Clear();
+            reference.GetDisplayText();
             Console.Write(scripture.GetDisplayText());
 
             if (scripture.IsCompletelyHidden())
@@ -23,7 +24,7 @@ class Program
             {
                 break;
             }
-            
+
             scripture.HideRandomNumbers(3);
         }
     }
