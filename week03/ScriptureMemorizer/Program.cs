@@ -17,7 +17,7 @@ class Program
                 break;
             }
 
-            Console.WriteLine("\n Press enter to continue or type 'quit' to finish:");
+            Console.WriteLine("\n\nPress enter to continue or type 'quit' to finish:");
             string response = Console.ReadLine();
 
             if (response == "quit")
