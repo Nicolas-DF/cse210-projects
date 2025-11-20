@@ -7,22 +7,21 @@ public class Address
     private string _stateORprovince;
     private string _country;
 
-    // constructor(s)
+    public Address(string streetAddress, string city, string stateORprovince, string country)
+    {
+        _streetAddress = streetAddress;
+        _city = city;
+        _stateORprovince = stateORprovince;
+        _country = country;
+    }
 
     public bool IsInUSA()
     {
-        if (_country == "USA" || _country == "US" || _country == "United States")
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return _country.Trim().ToUpper() == "USA";
     }
     public void GetAddress()
     {
-        Console.WriteLine($"{_streetAddress}, {_city} – {_stateORprovince}, {_country}"); 
+        Console.WriteLine($"{_streetAddress}\n{_city}, {_stateORprovince}\n{_country}"); 
     }
 
 }
