@@ -7,8 +7,7 @@ public class Product
     private double _price;
     private int _quantity;
 
-
-
+    
 
     public double GetTotalCost()
     {
