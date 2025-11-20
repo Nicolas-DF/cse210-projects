@@ -22,7 +22,7 @@ public class Address
     }
     public void GetAddress()
     {
-        Console.WriteLine($""); 
+        Console.WriteLine($"{_streetAddress}, {_city} – {_stateORprovince}, {_country}"); 
     }
 
 }
