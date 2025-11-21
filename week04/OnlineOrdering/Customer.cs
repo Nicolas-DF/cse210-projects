@@ -25,8 +25,8 @@ public class Customer
     {
         return _name;
     }
-    public void GetCustomerAddress()
+    public string GetCustomerAddress()
     {
-        _address.GetAddress();
+        return _address.GetAddress();
     }
 }
