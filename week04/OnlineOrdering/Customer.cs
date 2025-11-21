@@ -10,15 +10,15 @@ public class Customer
         _name = name;
         _address = address;
     }
-    public void LivesInUSA()
+    public bool LivesInUSA()
     {
         if (_address.IsInUSA())
         {
-            Console.WriteLine("The customer lives in the USA");
+            return true;
         }
         else
         {
-            Console.WriteLine("The costumer lives not in the USA");
+            return false;
         }
     }
     public string GetName()
