@@ -26,7 +26,7 @@ public class Order
     }
     public string GetShippingLabel()
     {
-        return $"Shipping label:\n{_customer.GetName()}\n{_customer.GetCustomerAddress()}";
+        return $"Shipping label:\n{_customer.GetName()}\n{_customer.GetCustomerAddress()}\n";
     }
     public double GetTotalPrice()
     {
