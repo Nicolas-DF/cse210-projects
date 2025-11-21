@@ -21,4 +21,20 @@ public class Product
     {
         return _price * _quantity;
     }
+    public string GetName()
+    {
+        return _name;
+    }
+    public int GetID()
+    {
+        return _id;
+    }
+    public int GetQuantity()
+    {
+        return _quantity;
+    }
+    public double GetPrice()
+    {
+        return _price;
+    }
 }
