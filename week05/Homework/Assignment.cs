@@ -2,8 +2,8 @@
 
 public class Assignment
 {
-    private string _studentName;
-    private string _topic;
+    protected string _studentName;
+    protected string _topic;
 
 
     public Assignment()
