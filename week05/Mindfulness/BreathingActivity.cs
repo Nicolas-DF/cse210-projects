@@ -6,7 +6,7 @@ public class BreathingActivity : Activity
     {
     }
 
-    public void Start()
+    public void Run()
     {
         Console.Clear();
         DisplayStartingMessage();
