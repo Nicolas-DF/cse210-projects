@@ -10,6 +10,7 @@ public class BreathingActivity : Activity
     {
         Console.Clear();
         DisplayStartingMessage();
+        Console.Clear();
         Console.WriteLine("Get ready to begin...");
         ShowSpinner(3);
 
