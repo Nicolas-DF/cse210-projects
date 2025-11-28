@@ -14,13 +14,14 @@ public class BreathingActivity : Activity
         Console.WriteLine("Get ready to begin...");
         ShowSpinner(3);
 
-        int halfDuration = _duration / 2;
-        for (int i = 0; i < halfDuration; i++)
+        int cycles = _duration / 10;
+        for (int i = 0; i < cycles; i++)
         {
-            Console.WriteLine("Breathe in...");
+            Console.Write("\nBreathe in...");
             DisplayCountDown(4);
-            Console.WriteLine("Breathe out...");
+            Console.Write("\nBreathe out...");
             DisplayCountDown(6);
+            Console.WriteLine();
         }
 
         DisplayEndingMessage();
