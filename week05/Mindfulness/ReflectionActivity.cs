@@ -47,12 +47,18 @@ public class ReflectionActivity : Activity
         Console.Write("\nYou may begin in: ");
         DisplayCountDown(5);
 
+        List<string> availableQuestions = new List<string>(_questions);// Create a copy of the questions list, so we can remove used questions
         DateTime endTime = DateTime.Now.AddSeconds(_duration);
         while (DateTime.Now < endTime)
         {
-            string question = _questions[rand.Next(_questions.Count)];
+            string question = availableQuestions[rand.Next(availableQuestions.Count)];
             Console.WriteLine($"\n> {question}");
-            ShowSpinner(5);
+            ShowSpinner(8);
+            availableQuestions.Remove(question);
+            if (availableQuestions.Count == 0)
+            {
+                break;
+            }
         }
 
         DisplayEndingMessage();
