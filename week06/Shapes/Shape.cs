@@ -8,7 +8,7 @@ public abstract class Shape
     {
         _color = color;
     }
-    public string GetCOlor()
+    public string GetColor()
     {
         return _color;
     }
