@@ -1,5 +1,3 @@
-
-
 using System.ComponentModel;
 
 public abstract class Goal
