@@ -47,7 +47,7 @@ public class GoalManager
             }
             else if (choice == 4)
             {
-                Console.WriteLine("What is the filename for the goal file? ");
+                Console.Write("What is the filename for the goal file? ");
                 string filename = Console.ReadLine();
                 LoadGoals(filename);
             }
@@ -166,7 +166,7 @@ public class GoalManager
             string goalType = parts[0];
 
             Goal goal;
-            if (goalType == "SimpleGoal")
+            if (goalType == "Simple Goal")
             {
                 string name = parts[1];
                 string description = parts[2];
@@ -179,7 +179,7 @@ public class GoalManager
                     goal.RecordEvent();
                 }
             }
-            else if (goalType == "EternalGoal")
+            else if (goalType == "Eternal Goal")
             {
                 string name = parts[1];
                 string description = parts[2];
@@ -187,7 +187,7 @@ public class GoalManager
 
                 goal = new EternalGoal(name, description, points);
             }
-            else if (goalType == "CheckListGoal")
+            else if (goalType == "CheckList Goal")
             {
                 string name = parts[1];
                 string description = parts[2];
