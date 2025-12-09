@@ -8,7 +8,7 @@ public class Cycling : Activity
     {
         _speed = speed;
     }
-
+    
     public double GetSpeedValue()
     {
         return _speed;
