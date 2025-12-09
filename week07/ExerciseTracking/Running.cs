@@ -1,9 +1,9 @@
 
 
-public class Runnning : Activity
+public class Running : Activity
 {
     private int _distance; // in meters
-    public Runnning(string date, int length, int distance) : base(date, length)
+    public Running(string date, int length, int distance) : base(date, length)
     {
         _distance = distance;
     }
